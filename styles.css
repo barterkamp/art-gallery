@@ -154,3 +154,45 @@ h4 {
     font-size: 3.6rem;
   }
 }
+
+/* buttons */
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  font-family: 'BigShouldersDisplay-Black', Arial, sans-serif;
+  font-size: 2rem;
+  line-height: normal;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+
+.btn__header {
+  background-color: var(--color-brand-black);
+  color: var(--color-brand-white);
+  padding: 24px 32px;
+  transition: background-color 0.3s;
+}
+
+.btn__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-brand-gold);
+  width: 56px;
+  height: 72px;
+  transition: background-color 0.3s;
+}
+
+/* hover states */
+
+.btn:hover .btn__header {
+  background-color: var(--color-brand-gold);
+}
+
+.btn:hover .btn__icon {
+  background-color: var(--color-brand-black);
+}
