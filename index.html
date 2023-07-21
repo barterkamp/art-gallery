@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
       rel="icon"
       type="image/png"
@@ -11,150 +10,54 @@
       href="./assets/icons/favicon-32x32.png" />
     <link rel="stylesheet" href="./styles.css" />
 
-    <title>Frontend Mentor | Art gallery website</title>
+    <title>Art gallery website | coded by Bart Erkamp</title>
   </head>
   <body>
-    <header class="hero">
-      <div class="hero__background"></div>
-      <div class="hero__image">
-        <picture>
-          <source
-            srcset="
-              ./assets/desktop/image-hero.jpg,
-              ./assets/desktop/image-hero@2x.jpg 2x
-            "
-            media="(min-width: 1100px)" />
-          <source
-            srcset="
-              ./assets/tablet/image-hero.jpg,
-              ./assets/tablet/image-hero@2x.jpg 2x
-            "
-            media="(min-width: 550px)" />
-          <img
-            src="./assets/mobile/image-hero.jpg"
-            srcset="
-              ./assets/mobile/image-hero.jpg    1x,
-              ./assets/mobile/image-hero@2x.jpg 2x
-            "
-            alt="two museum visitors looking at a giant black and white portrait of an older lady" />
-        </picture>
-      </div>
-      <div class="hero__info">
-        <div class="hero__header">
-          <h1 class="hero__heading--black">
-            modern<br />
-            art gallery
-          </h1>
-          <h1 class="hero__heading--white">
-            modern<br />
-            art gallery
-          </h1>
+    <div class="wrapper">
+      <header class="hero">
+        <div class="hero__image">
+          <picture>
+            <source
+              srcset="
+                assets/desktop/image-hero.jpg,
+                assets/desktop/image-hero@2x.jpg
+              "
+              media="(min-width: 1024px)" />
+            <source
+              srcset="
+                ./assets/tablet/image-hero.jpg,
+                ./assets/tablet/image-hero@2x.jpg 2x
+              "
+              media="(min-width: 550px)" />
+            <img
+              src="assets/mobile/image-hero.jpg"
+              srcset="
+                assets/mobile/image-hero.jpg,
+                assets/mobile/image-hero@2x.jpg 2x
+              "
+              alt="two museum visitors looking at a giant black and white portrait of an older lady" />
+          </picture>
         </div>
-        <p class="hero__paragraph">
-          The arts in the collection of the Modern Art Gallery all started from
-          a spark of inspiration. Will these pieces inspire you? Visit us and
-          find out.
-        </p>
-        <button class="btn">
-          <div class="btn__header">our location</div>
-          <div class="btn__icon">
-            <svg width="10" height="24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke="#FFF" fill="none" d="m1 0 8 12-8 12" />
-            </svg>
-          </div>
-        </button>
-      </div>
-    </header>
-
-    <!--    <p class="small">-->
-    <!--      Our location Your day at the gallery Wander through our distinct-->
-    <!--      collections and find new insights about our artists. Dive into the details-->
-    <!--      of their creative process. Come &amp; be inspired We’re excited to welcome-->
-    <!--      you to our gallery and see how our collections influence you. Modern Art-->
-    <!--      Gallery The Modern Art Gallery is free to all visitors and open seven days-->
-    <!--      a week from 8am to 9pm. Find us at 99 King Street, Newport, USA.-->
-    <!--    </p>-->
-
-    <!--    <button class="btn">-->
-    <!--      <div class="btn__icon">-->
-    <!--        <svg width="10" height="24" xmlns="http://www.w3.org/2000/svg">-->
-    <!--          <path stroke="#FFF" fill="none" d="M9 24 1 12 9 0" />-->
-    <!--        </svg>-->
-    <!--      </div>-->
-    <!--      <div class="btn__header">back to home</div>-->
-    <!--    </button>-->
-
-    <!--    start of photogrid -->
-
-    <!--    image 1 -->
-    <picture>
-      <source
-        srcset="
-          ./assets/desktop/image-grid-1.jpg,
-          ./assets/desktop/image-grid-1@2x.jpg 2x
-        "
-        media="(min-width: 1100px)" />
-      <source
-        srcset="
-          ./assets/tablet/image-grid-1.jpg,
-          ./assets/tablet/image-grid-1@2x.jpg 2x
-        "
-        media="(min-width: 550px)" />
-      <img
-        src="./assets/mobile/image-grid-1.jpg"
-        srcset="
-          ./assets/mobile/image-grid-1.jpg    1x,
-          ./assets/mobile/image-grid-1@2x.jpg 2x
-        "
-        alt="A view of the exhibition space with various abstract artworks on the wall." />
-    </picture>
-
-    <!--  image 2-->
-
-    <picture>
-      <source
-        srcset="
-          ./assets/desktop/image-grid-2.jpg,
-          ./assets/desktop/image-grid-2@2x.jpg 2x
-        "
-        media="(min-width: 1100px)" />
-      <source
-        srcset="
-          ./assets/tablet/image-grid-2.jpg,
-          ./assets/tablet/image-grid-2@2x.jpg 2x
-        "
-        media="(min-width: 550px)" />
-      <img
-        src="./assets/mobile/image-grid-2.jpg"
-        srcset="
-          ./assets/mobile/image-grid-2.jpg    1x,
-          ./assets/mobile/image-grid-2@2x.jpg 2x
-        "
-        alt="A wooden bench overlooking a large abstract painting on the wall." />
-    </picture>
-
-    <!--  image 3-->
-
-    <picture>
-      <source
-        srcset="
-          ./assets/desktop/image-grid-3.jpg,
-          ./assets/desktop/image-grid-3@2x.jpg 2x
-        "
-        media="(min-width: 1100px)" />
-      <source
-        srcset="
-          ./assets/tablet/image-grid-3.jpg,
-          ./assets/tablet/image-grid-3@2x.jpg 2x
-        "
-        media="(min-width: 550px)" />
-      <img
-        src="./assets/mobile/image-grid-3.jpg"
-        srcset="
-          ./assets/mobile/image-grid-3.jpg    1x,
-          ./assets/mobile/image-grid-3@2x.jpg 2x
-        "
-        alt="A spacious museum hall with visitors looking at various paintings on the wall." />
-    </picture>
+        <div class="hero__info">
+          <h1 class="hero__heading">
+            modern<br />
+            art gallery
+          </h1>
+          <p class="hero__paragraph">
+            The arts in the collection of the Modern Art Gallery all started
+            from a spark of inspiration. Will these pieces inspire you? Visit us
+            and find out.
+          </p>
+          <button class="btn">
+            <div class="btn__header">our location</div>
+            <div class="btn__icon">
+              <svg width="10" height="24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="#FFF" fill="none" d="m1 0 8 12-8 12" />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </header>
+    </div>
   </body>
 </html>
